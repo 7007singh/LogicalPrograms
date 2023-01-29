@@ -13,7 +13,7 @@ namespace LogicalPrograms
             {
                 if(number%i == 0)
                 {
-                    Console.Write("Divisor: {0},",i);
+                    Console.Write("{0},",i);
                     sum += i;
                 }
             }
