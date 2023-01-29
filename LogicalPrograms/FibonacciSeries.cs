@@ -17,7 +17,6 @@ namespace LogicalPrograms
                 firstNumber = secondNumber;
                 secondNumber = thirdNumber;
             } 
-            Console.ReadLine();
         }
     }
 }
