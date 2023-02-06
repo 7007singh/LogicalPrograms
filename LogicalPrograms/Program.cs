@@ -9,7 +9,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Enter Program number for execution");
             Console.WriteLine("1:FibonacciSeries\n2:FindPerfactNumber\n3:CheckPrimeOrNot\n4:ReverseNumber\n5:CouponNumber" +
-                "\n6:StopWatch\n7:VendingMachine\n8:DayOfWeek\n9:TemperaturreConversion");
+                "\n6:StopWatch\n7:VendingMachine\n8:DayOfWeek\n9:TemperaturreConversion\n10:Monthly Payment");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -56,6 +56,11 @@ namespace LogicalPrograms
                 case 9:
                     Console.Clear();
                     TemperatureConversion.ConvertTemperature();
+                    Console.ReadLine();
+                    break;
+                case 10:
+                    Console.Clear();
+                    MonthlyPayment.GetMonthlyPayment();
                     Console.ReadLine();
                     break;
             }
