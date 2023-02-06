@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsharpPractice;
+using System;
 
 namespace LogicalPrograms
 {
@@ -8,7 +9,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Enter Program number for execution");
             Console.WriteLine("1:FibonacciSeries\n2:FindPerfactNumber\n3:CheckPrimeOrNot\n4:ReverseNumber\n5:CouponNumber" +
-                "\n6:StopWatch\n7:VendingMachine\n8:DayOfWeek");
+                "\n6:StopWatch\n7:VendingMachine\n8:DayOfWeek\n9:TemperaturreConversion");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -50,6 +51,11 @@ namespace LogicalPrograms
                 case 8:
                     Console.Clear();
                     DayOfWeek.GetDayOfWeek();
+                    Console.ReadLine();
+                    break;
+                case 9:
+                    Console.Clear();
+                    TemperatureConversion.ConvertTemperature();
                     Console.ReadLine();
                     break;
             }
