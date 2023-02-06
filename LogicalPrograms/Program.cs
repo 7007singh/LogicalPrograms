@@ -7,7 +7,8 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Program number for execution");
-            Console.WriteLine("1:FibonacciSeries\n2:FindPerfactNumber\n3:CheckPrimeOrNot\n4:ReverseNumber\n5:CouponNumber\n6:StopWatch\n7:VendingMachine");
+            Console.WriteLine("1:FibonacciSeries\n2:FindPerfactNumber\n3:CheckPrimeOrNot\n4:ReverseNumber\n5:CouponNumber" +
+                "\n6:StopWatch\n7:VendingMachine\n8:DayOfWeek");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -44,6 +45,11 @@ namespace LogicalPrograms
                 case 7:
                     Console.Clear();
                     VendingMachine.GetMinimumNotes();
+                    Console.ReadLine();
+                    break;
+                case 8:
+                    Console.Clear();
+                    DayOfWeek.GetDayOfWeek();
                     Console.ReadLine();
                     break;
             }
