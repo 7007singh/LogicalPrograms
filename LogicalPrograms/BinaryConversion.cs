@@ -17,8 +17,7 @@ namespace LogicalPrograms
             int i = 0;
             int count = 0;
             while (n > 0) 
-            {
-                
+            {                
                 int remainder = n % 2;
                 n = n / 2;
                 arr[i] = remainder;                 
@@ -43,6 +42,18 @@ namespace LogicalPrograms
             {
                 Console.WriteLine("{0} is not belons to binary decomposition", n);
             }
+
+            int k = 0;
+            int temp;
+            int m = arr.Length -2;
+            for(k = 0; k < m; k++)
+            {
+                temp = arr[k];
+                arr[k] = arr[j];
+                arr[j] = temp;
+                j++;
+            }
+            Console.WriteLine(arr);
         }
     }
 }
