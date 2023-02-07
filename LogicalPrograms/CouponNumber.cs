@@ -12,7 +12,6 @@ namespace LogicalPrograms
         {
             char[] arr = new char[99];
             char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToCharArray();
-
             Random random = new Random();
 
             for (int i = 0; i <= 5; i++)

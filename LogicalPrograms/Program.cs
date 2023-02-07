@@ -9,7 +9,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Enter Program number for execution");
             Console.WriteLine("1:FibonacciSeries\n2:FindPerfactNumber\n3:CheckPrimeOrNot\n4:ReverseNumber\n5:CouponNumber\n6:StopWatch\n7:VendingMachine" +
-                "\n8:DayOfWeek\n9:TemperaturreConversion\n10:Monthly Payment\n11:SquareRootUsingNewtonMethod");
+                "\n8:DayOfWeek\n9:TemperaturreConversion\n10:Monthly Payment\n11:SquareRootUsingNewtonMethod\n12:BinaryConversion");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -66,6 +66,11 @@ namespace LogicalPrograms
                 case 11:
                     Console.Clear();
                     SquareRoot.ComputeSquareRootUsingNewtonMethod();
+                    Console.ReadLine();
+                    break;
+                case 12:
+                    Console.Clear();
+                    BinaryConversion.toBinary();
                     Console.ReadLine();
                     break;
             }

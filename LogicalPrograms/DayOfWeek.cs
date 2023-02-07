@@ -41,33 +41,33 @@ namespace LogicalPrograms
             int d0 = (d + x + 31 * m0 / 12) % 7;
             Console.WriteLine(d0);
 
-            if(d0 == 1)
-            {
-                Console.WriteLine("Wednesday");
-            }
-            else if(d0 == 2)
-            {
-                Console.WriteLine("Thrusday");
-            }
-            else if (d0 == 3) 
-            {
-                Console.WriteLine("Friday");
-            }
-            else if(d0 == 4)
-            {
-                Console.WriteLine("Saturday");
-            }
-            else if (d0 == 5)
+            if(d0 == 0)
             {
                 Console.WriteLine("Sunday");
             }
-            else if (d0 == 6)
+            else if(d0 == 1)
             {
                 Console.WriteLine("Monday");
             }
-            else if  (d0 == 7)
+            else if (d0 == 2) 
             {
                 Console.WriteLine("Tuesday");
+            }
+            else if(d0 == 3)
+            {
+                Console.WriteLine("Wednesday");
+            }
+            else if (d0 == 4)
+            {
+                Console.WriteLine("Thrusday");
+            }
+            else if (d0 == 5)
+            {
+                Console.WriteLine("Friday");
+            }
+            else if  (d0 == 6)
+            {
+                Console.WriteLine("Saturday");
             }
             
         }
